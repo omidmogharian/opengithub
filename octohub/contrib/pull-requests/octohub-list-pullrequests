@@ -23,6 +23,7 @@ Environment:
     OCTOHUB_LOGLEVEL            Log level debugging sent to stderr
 
 """
+from __future__ import print_function
 
 import os
 import sys
