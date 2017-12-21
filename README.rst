@@ -72,9 +72,6 @@ Usage examples (CLI)
     INFO [response]: x-ratelimit-remaining: 4996
     ...
 
-For more example usage::
-
-    $ octohub --help
 
 
 .. _Activity: http://developer.github.com/v3/activity/
