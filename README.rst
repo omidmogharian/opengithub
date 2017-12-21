@@ -1,7 +1,7 @@
 OpenGitHub: interface to GitHub
 =====================================================
 
-OpenGitHub is a Python package that simply opens the access to the GitHub v3 API for montorin purposes:
+OpenGitHub is a Python package that simply opens the access to the GitHub v3 API for monitoring purposes:
 
 * `Activity`_
 * `Gists`_
@@ -15,9 +15,6 @@ Dependencies
 
 * `python-requests`_
 * `python-simplejson`_
-
-GitHub Token
-------------
 
 
 Usage examples (API)
