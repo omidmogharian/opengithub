@@ -1,8 +1,7 @@
-OctoHub: Low level Python and CLI interface to GitHub
+OpenGitHub: interface to GitHub
 =====================================================
 
-OctoHub is a Python package that provides a low level interface to the
-full GitHub v3 API:
+OpenGitHub is a Python package that simply opens the access to the GitHub v3 API for montorin purposes:
 
 * `Activity`_
 * `Gists`_
@@ -10,33 +9,6 @@ full GitHub v3 API:
 * `Issues`_
 * `Orgs`_
 * `Pull Requests`_
-* `Repositories`_
-* `Users`_
-* `Search`_
-
-OctoHub was developed out of a need to have a one-to-one interface to
-the GitHub API based on the excellent `online documentation`_, with the
-least amount of abstraction.
-
-OctoHub does do its part by parsing raw json responses into Pythonic
-attribute dictionaries, as well providing an optional iterative Pager
-for handling pagination.
-
-Also included is a command line interface for quick interaction with
-GitHub's API.
-
-Speaking of development, it's really easy to leverage the base code to
-develop higher level tools, see `contrib`_ for some examples. We also
-love pull requests, see our `gitflow`_ for guidelines and walk through.
-
-Installation
-------------
-
-::
-
-    $ git clone https://github.com/turnkeylinux/octohub.git
-    $ cd octohub
-    $ sudo make install
 
 Dependencies
 ''''''''''''
@@ -47,9 +19,6 @@ Dependencies
 GitHub Token
 ------------
 
-OctoHub can be used anonymously, but is much more useful when authenticated.
-You can create a revokable access token under ``Personal API Tokens`` in your
-`account settings`_.
 
 Usage examples (API)
 --------------------
