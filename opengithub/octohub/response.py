@@ -78,7 +78,7 @@ def parse_response(response):
     response.parsed = AttrDict()
     response.parsed_link = AttrDict()
 
-    if 'link' in list(response.headers.keys()):
+    if 'Link' in list(response.headers.keys()):
         response.parsed_link = _parse_link(response.headers['link'])
 
     headers = ['status', 'x-ratelimit-limit', 'x-ratelimit-remaining']

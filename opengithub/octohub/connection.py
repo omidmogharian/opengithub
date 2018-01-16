@@ -9,7 +9,7 @@
 from __future__ import print_function
 
 import requests
-
+import re
 from octohub import __useragent__
 from octohub.response import parse_response
 
@@ -30,15 +30,16 @@ class Pager(object):
     def __iter__(self):
         while True:
             self.count += 1
+            
             response = self.conn.send('GET', self.uri, self.params)
             yield response
 
-            if self.count == self.max_pages:
+            if self.count == self.max_pages:    
                 break
-
+            
             if not 'next' in list(response.parsed_link.keys()):
                 break
-
+            
             # Parsed link is absolute. Connection wants a relative link,
             # so remove protocol and GitHub endpoint for the pagination URI.
             m = re.match(self.conn.endpoint + '(.*)', response.parsed_link.next.uri)
